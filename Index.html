@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Container">
+
+        
+            <nav class="navContainer">
+                <div class="menuAndLogo">
+                    <div class="menu">
+                        <label for="check">
+                            <img src="./Assets/hamburgermenu.svg">
+                        </label>
+                        
+                        <input type="checkbox" id="check">
+                    </div>
+
+                    <div class="logo">
+                        <img src="./Assets/Logo.png">
+                    </div>
+                </div>
+
+                <div class="searchAndConfig">
+                    <form class="Search">
+                        <input type="text" placeholder="Search here">
+                        <button>
+                            <img src="./Assets/search.svg">
+                        </button>
+                    </form>
+
+                    <div class="config">
+                        <button class="FeatureButton configButton"><img src="./Assets/ic_setting.svg"></button>
+                    </div>
+                </div>
+
+                <div class="FeaturesAndProfile">
+                    <div class="Features">
+                        <button class="FeatureButton Notification">
+                            <img src="./Assets/notification.svg">
+                        </button>
+
+                        <button class="FeatureButton Message">
+                            <img src="./Assets/chat.svg">
+                        </button>
+
+                        <button class="FeatureButton Promo">
+                            <img src="./Assets/promos.svg">
+                        </button>
+                    </div>
+
+                    <div class="Profile">
+                        <button class="FeatureButton Profile">
+                            <img src="./Assets/Profile.svg">
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="headerContainer">Dashboard /</div>
+
+            <!-- Mobile -->
+
+            <main class="Dashboard Dashboard--Mobile">
+                
+                <section class="Dashboard__Selling">
+                    <div class="Dashboard__Selling--Title title">
+                        <p>Bests Selling</p>
+                        <p>This Week</p>
+                    </div>
+                    <div class="Dashboard__Selling--Date date">
+                        <div class="Date">Tuesday</div>
+                        <div class="Info">215,523 pcs</div>
+                    </div>
+
+            
+                    <div class="charts">
+                        <div class="charts__pieChart">
+                            <img src="./Assets/pieCharts.svg">
+                        </div>
+
+                        <div class="charts__barChart">
+                            <img src="./Assets/barChart.svg" width="100%" height="100%">
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="Dashboard__minCharts">
+                    <div  class="Dashboard__minChart--Child Daily">
+                        <div class="infoAndDate">
+                            <p>456k Pcs</p>
+                            <p>Daily</p>
+                        </div>
+
+                        <div class="Type">Ticket</div>
+
+                        <div class="subInfo">Sold</div>
+
+                        <img src="./Assets/progressbar.svg">
+
+                    </div>
+
+                    <div  class="Dashboard__minChart--Child Week">
+                        <div class="infoAndDate">
+                            <p>451,509</p>
+                            <p>This Week</p>
+                        </div>
+
+                        <div class="Type">Sales</div>
+
+                        <div class="subInfo">s</div>
+                        
+                        <img src="./Assets/Line.svg">
+
+                    </div>
+
+                    <div  class="Dashboard__minChart--Child Monthly">
+                        <div class="infoAndDate">
+                            <p>451,509</p>
+                            <p>This Week</p>
+                        </div>
+
+                        <div class="Type">Sales</div>
+
+                        <div class="subInfo">s</div>
+                        
+                        <!-- <img src="./Assets/Lines.svg"> -->
+                    </div>
+                    
+                    <div  class="Dashboard__minChart--Child Ticket">
+                        <img src="./Assets/pieChart.svg" alt="">
+                    </div>
+                </section>
+
+
+                <Section class="Dashboard__Gallery">
+                    <div class="swiper mobile">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide Slide1"><p>Slide1</p></div>
+                          <div class="swiper-slide Slide2"><p>Slide2</p></div>
+                          <div class="swiper-slide Slide3"><p>Slide3</p></div>
+                        </div>
+
+                        <!-- pagination -->
+                        <div class="swiper-pagination"></div>
+
+                         <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                         <div class="swiper-button-next"></div>
+                    </div>
+
+                </Section>
+            </main>
+
+            <!-- Desktop -->
+            <main class="Dashboard Dashboard--Desktop">
+                <section class="Dashboard__lefth">
+                    <section class="Dashboard__Selling">
+                        <div class="Dashboard__Selling--Title title">
+                            <p>Bests Selling</p>
+                            <p>This Week</p>
+                        </div>
+                        <div class="Dashboard__Selling--Date">
+                            <p>Date</p>
+                            <p>215,523 pcs</p>
+                        </div>
+                        <div class="charts">
+                            <div class="charts__pieChart">
+                                <img src="./Assets/pieCharts.svg">
+                            </div>
+                            <div class="charts__barChart">
+                                <img src="./Assets/barChart.svg" width="100%" height="100%">
+                            </div>
+                        </div>
+                    </section>
+    
+                    <section class="Dashboard__minCharts">
+                        <div  class="Dashboard__minChart--Child Daily">
+                            <div class="infoAndDate">
+                                <p>456k Pcs</p>
+                                <p>Daily</p>
+                            </div>
+    
+                            <div class="Type">Ticket</div>
+    
+                            <div class="subInfo">Sold</div>
+    
+                            <img src="./Assets/progressbar.svg">
+    
+                        </div>
+    
+                        <div  class="Dashboard__minChart--Child Week">
+                            <div class="infoAndDate">
+                                <p>451,509</p>
+                                <p>This Week</p>
+                            </div>
+    
+                            <div class="Type">Sales</div>
+    
+                            <div class="subInfo">s</div>
+                            
+                            <img src="./Assets/Line.svg">
+    
+                        </div>
+                        <div  class="Dashboard__minChart--Child Monthly">
+                            <div class="infoAndDate">
+                                <p>451,509</p>
+                                <p>This Monthly</p>
+                            </div>
+    
+                            <div class="Type">Sales</div>
+    
+                            <div class="subInfo">s</div>
+                            
+                            <img src="./Assets/Lines.svg">
+                        </div>
+                        <div  class="Dashboard__minChart--Child Ticket">
+                            <p>This Week</p>
+                           <div class="Ticket__Chart">
+                            <img src="./Assets/pieChart.Desk.svg">
+                            <div class="Ticket__Chart--Legends">
+                                <div class="Legend A">
+                                    <div class="legendColor"></div>
+                                    <p>Ticket A</p>
+                                </div>
+                                <div class="Legend B">
+                                    <div class="legendColor"></div>
+                                    <p>Ticket B</p>
+                                </div>
+                                <div class="Legend C">
+                                    <div class="legendColor"></div>
+                                    <p>Ticket C</p>
+                                </div>
+                                <div class="Legend D">
+                                    <div class="legendColor"></div>
+                                    <p>Ticket D</p>
+                                </div>
+                                
+                            </div>
+                           </div>
+                        </div>
+                    </section>
+                </section>
+
+                <section class="Dashboard__right">
+                    <section class="saleChart">
+                        <div class="comparationAndPorcent">
+                            <p>Sales Comparison</p>
+                            <p>94%</p>
+                        </div>
+
+                        <div class="SaleDate">Than last day</div>
+
+                        <img src="./Assets/bars.svg" alt="">
+
+
+                    </section>
+                    
+                    <Section class="Dashboard__Gallery">
+                        <p>Event Galleries</p>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide Slide1"><p>Slide1</p></div>
+                              <div class="swiper-slide Slide2"><p>Slide2</p></div>
+                              <div class="swiper-slide Slide3"><p>Slide3</p></div>
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+
+                            <div class="swiper-button-prev"></div>
+                             <div class="swiper-button-next"></div>
+                        </div>
+
+                    </Section>
+                </section>
+            </main>
+
+            
+    </div>
+</body>
+
+<script type="module" src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</html>

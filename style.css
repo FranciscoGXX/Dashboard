@@ -1,0 +1,727 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* outline: 1px solid red; */
+}
+
+
+html{
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: 500; */
+}
+
+body{
+    color: #FFF;
+}
+
+.Container{
+    min-width: 375px;
+    min-height: 100vh;
+    background-color: #2F363D;
+    display: grid;
+    grid-template-rows: 60px 1fr;
+}
+
+/* .navContainer{
+    grid-row: 1/2;
+    background-color: #24292E;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 15px;
+} */
+.navContainer{
+    grid-row: 1/2;
+    background-color: #24292E;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 20px;
+    align-content: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.menuAndLogo{
+    display: flex;
+    align-items: center;
+}
+
+#check{
+    display: none;
+}
+
+.searchAndConfig{
+    display: none;
+}
+
+.FeaturesAndProfile{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    column-gap: 10px;
+}
+
+.Features{
+    display: flex;
+    column-gap: 10px;
+}
+
+.FeatureButton{
+    background-color: #2F363D;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+
+
+.Message,.Promo{
+    display: none;
+}
+
+.Profile{
+    background: #EEE;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.headerContainer{
+    display: none;
+
+}
+
+
+/* DASHBOARD */
+
+.Dashboard{
+    /* grid-row: 2/3; */
+    padding: 0 20px;
+    display: grid;
+    /* grid-template-rows: 230px 230px 200px 200px; */
+    grid-template-rows: 310px 490px 200px;
+    row-gap: 10px;
+    margin-top: 10px;
+}
+
+.Dashboard--Desktop{
+    display: none;
+}
+
+.Dashboard__Selling{
+    background-color: #272E35 ;
+    border-radius: 15px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 20px 30px 100px;
+    row-gap: 8px;
+}
+
+.title{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title p:last-child{
+    display: none;
+}
+
+.date{
+    font-size: .9rem;
+}
+
+.Dashboard__Selling--Date{
+    background-color: #20262D;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.charts{
+    width: 100%;
+}
+
+.charts__pieChart{
+    display: flex;
+    justify-content: center;
+}
+
+.charts__pieChart>img{
+    max-width: 100%;
+    height: 230px; 
+    object-fit: fill;
+}
+
+.charts__barChart{
+    display: none;
+}
+
+/*MinCharts*/
+
+.Dashboard__minCharts{
+    /* grid-row: 1/2;
+    grid-column: 1/2; */
+    display: grid;
+    grid-template-rows: 125px 125px 200px;
+    row-gap: 20px;  
+
+
+}
+
+
+
+.Dashboard__minChart--Child{
+    border-radius: 15px;
+    background-color: #272E35;
+    display: grid;
+    grid-template-rows: 16px 8px 8px 1fr;
+    row-gap: 13px;
+    padding: 8px 13px;
+    overflow: hidden;
+}
+
+.Dashboard__minChart--Child>img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: auto;
+}
+
+.infoAndDate{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.Week>img{
+    margin-top: -3px;
+}
+
+.Monthly{
+    display: none;
+}
+
+.Ticket{
+   grid-template-rows: 150px;
+   padding: 10px;
+   /* overflow: hidden; */
+   /* z-index: 999;
+   display: flex;
+   align-items: center; */
+}
+
+.Ticket>img{
+    max-width: 100%;
+    height: 100%;
+}
+
+/* 
+.Dashboard__Ticket{
+    background-color:#90A959 ;
+} */
+
+
+/* Slider */
+
+.Dashboard__Gallery{
+    border-radius: 15px;
+    padding: 10px 0;
+}
+
+.swiper{
+    border-radius: 15px;
+    max-width: 40rem;
+    height: 100%;
+}
+
+.mobile{
+    max-width: 20rem;    
+}
+
+.swiper-slide{
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #C4C4C4;
+}
+
+
+
+/* .Slide1{
+    background-color: red;
+}
+
+.Slide2{
+    background-color: blue;
+}
+
+.Slide3{
+    background-color: #04E762;
+} */
+
+
+/*Mobile big-screen @media min:425  */
+@media (min-width:425px){
+    .mobile{
+        max-width: 24rem;    
+    }
+}
+
+/* Tablet @Media min:768 */
+@media (min-width:647px) {
+
+
+    /*Header*/
+
+    /* .navContainer{
+        grid-template-columns: 1fr 2fr 1fr;
+    } */
+
+   
+
+
+
+    .Message,.Promo{
+        display: block;
+    }
+
+    /*Dashboard*/
+
+    .Dashboard{
+        grid-template-rows: 330px 330px 300px;
+    }
+
+    .title p:last-child{
+        display: block;
+    }
+
+    .Dashboard__Selling{
+        display: grid;
+        grid-template-rows: 30px 25px 1fr;
+        text-align: center;
+
+    }
+
+     /* MinCharts */
+
+    .charts{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+    }
+
+    .charts__pieChart{
+        /* background-color: #F5B700; */
+        display: flex;
+        /* align-items: flex-start; */
+    }
+
+
+    .charts__barChart{
+        display: block;
+        height: 230px;
+        padding: 10px 0;
+    }
+
+   
+
+    .Dashboard__minCharts{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        column-gap: 10px;
+    }
+
+    .Monthly{
+        display:  block;
+    }
+
+    /* Slider */
+    .mobile{
+        max-width: 38rem;    
+    }
+
+
+
+    
+}
+
+/* Laptop @media min: 1024 */
+@media screen and (min-width:1024px){ /*1280*/
+
+    /* main Container */
+    .Container{
+        grid-template-rows: 7% 4% 89%; /*60 30 1fr*/
+        /* background-color: blueviolet; */
+    }
+
+       .navContainer{
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    .searchAndConfig{
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .Search{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Search>input{
+       padding: 8px 250px 8px 10px;
+       border: none;
+       outline: .5px solid #A4A4A4;
+       color: #FFF;
+       background-color: #2F363D;
+       border-radius: 5px;
+    }
+
+    .Search>button{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        /* height: px; */
+        position: relative;
+        left: -35px;
+    }
+
+    .Search>button>img{
+        width: 15px;
+        height: 15px;
+        margin: auto;
+    }
+
+    .configButton{
+        background-color:#13B497 ;
+    }
+
+    .FeatureButton>img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .headerContainer{
+        display: flex;
+        background-color: #2D3339;
+        align-items: center;
+        padding-left: 3.8rem;
+        color: #13B497;
+    }
+
+
+    .Dashboard--Mobile{
+        display: none;
+    }
+    
+    .Dashboard--Desktop{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;
+        column-gap: 25px;
+    }
+
+    
+    /* Dashboard left */
+    .Dashboard__lefth{
+        display: grid;
+        grid-template-rows: 400px 325px; /*310 1fr*/
+        row-gap: 15px;
+    }
+
+    .Dashboard__Selling{
+        grid-template-rows: 40px 35px 1fr;
+    }
+
+    .Dashboard__minCharts{
+        grid-template-rows: repeat(2,1fr); /*2 123*/
+        padding: 10px;  
+    }
+
+   
+    
+    /* .charts__pieChart{
+        display: flex;
+        align-items: flex-start;
+    } */
+
+    .charts__pieChart>img{
+        height: 280px; 
+    }
+
+    .charts__barChart{
+        display: block;
+        height: auto;
+    }
+
+  
+    /*MinCharts*/
+
+    .Dashboard__minCharts{
+        row-gap: 10px;
+    }
+
+
+
+
+
+    /* .Dashboard__minChart--Child>img{
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        top: -50px;
+    } */
+    .Dashboard__minChart--Child>img{
+        max-width: 100%;
+        height: auto;
+        /* position: relative;
+        top: -50px; */
+    }
+
+    .Week>img{
+        position: relative;
+        top: 20px;
+    }
+
+    .Monthly>img{
+        position: relative;
+        top: -28px;
+    }
+
+    .Ticket{
+        grid-template-rows: 20px 1fr;
+        padding: 5px;
+    }
+
+    .Ticket__Chart{
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        column-gap: 5px;
+    }
+
+    .Ticket__Chart>img:first-child{
+        /* background-color: red; */
+        height: 105px;
+    }
+
+    .Ticket__Chart--Legends{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        align-items: center;
+        column-gap: 5px;
+    }
+
+    .Legend{
+        display: flex;
+        column-gap: 2px;
+    }
+
+    .legendColor{
+        width: 8px;
+        height: 8px;
+        margin: auto 0;
+    }
+
+    .A>.legendColor{
+        background-color: red;
+    }
+    .B>.legendColor{
+        background-color: blue;
+    }
+    .C>.legendColor{
+        background-color: green;
+    }
+    .D>.legendColor{
+        background-color: yellow;
+    }
+    
+
+    /* Dashboard Right */
+
+    .Dashboard__right{
+        display: grid;
+        grid-template-rows:340px 1fr; /*340 1fr*/
+        row-gap: 20px;
+    }
+
+    .saleChart{
+        /* background: #13B497; */
+        background: linear-gradient(150deg, #13B497 0%, #05737A 100%);
+        /* background: red; */
+        border-radius: 10px;
+        display: grid;
+        grid-template-rows: 40px 30px 240px;
+        row-gap: 15px;
+        padding: 15px 20px;
+    }
+
+    .comparationAndPorcent{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.7rem;
+    }
+
+    .saleChart>img{
+        max-width: 100%;
+        /* height: 100%; */
+        margin-top:40px ;
+        /* #13B497 */
+    }
+
+    .Dashboard__Gallery{
+        display: grid;
+        grid-template-rows:2.5rem 1fr;  /*2.5rem 1fr*/
+    }
+
+    .Dashboard__Gallery>p{
+        font-size: 2rem;
+    }
+
+}
+
+
+/* Laptop @media min: 1366 */
+
+@media screen and (min-width:1366px) {
+    
+    /* main Container */
+    .Container{
+        grid-template-rows: 7% 4% 89%; /*60 30 1fr*/
+        /* background-color: blue; */
+    }
+
+    .headerContainer{
+        display: flex;
+        background-color: #2D3339;
+        align-items: center;
+        padding-left: 3.8rem;
+        color: #13B497;
+    }
+
+    .Dashboard--Mobile{
+        display: none;
+    }
+    
+    .Dashboard--Desktop{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;
+        column-gap: 25px;
+    }
+
+    .Dashboard__minCharts{
+        grid-template-rows: repeat(2,123px);
+    }
+
+    /* Dashboard left */
+    .Dashboard__lefth{
+        display: grid;
+        grid-template-rows: 300px 200px; /*310 1fr*/
+        row-gap: 5px;
+    }
+    
+    /* .charts__pieChart{
+        display: flex;
+        align-items: flex-start;
+    } */
+
+    .charts__pieChart>img{
+        height: 230px; 
+        position: relative;
+        top: -35px;
+    }
+
+    .charts__barChart{
+        display: block;
+        height: 180px;
+        padding: 10px 0;
+    }
+
+  
+
+    .Dashboard__minCharts{
+        row-gap: 5px;
+    }
+
+    /* .Dashboard__minChart--Child>img{
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        top: -50px;
+    } */
+
+    .Week>img{
+        top: 0;
+    }
+
+
+    /* Dashboard Right */
+
+    .Dashboard__right{
+        display: grid;
+        grid-template-rows: 230px 1fr;
+        /* row-gap: 1px; */
+    }
+
+    .Monthly>img{
+        top: -70px;
+    }
+
+    .Ticket{
+        grid-template-rows: 20px 1fr;
+        row-gap: 10px;
+    }
+
+    .Ticket>img{
+        /* height: 80px; */
+    }
+
+    .Ticket__Chart{
+        
+    }
+
+    .Ticket__Chart>img{
+        max-height: 90px;
+        /* margin: auto; */
+    }
+
+    .saleChart{
+        background: #13B497;
+        border-radius: 10px;
+        display: grid;
+        grid-template-rows: 15px 15px 160px;
+        row-gap: 10px;
+        padding: 15px 20px;
+    }
+
+    .comparationAndPorcent{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .saleChart>img{
+        max-width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        /* #13B497 */
+    }
+
+    .Dashboard__Gallery{
+        row-gap: 10px;
+    }
+
+    /* .Dashboard__minCharts{
+        display: none;
+    } */
+
+}
+
